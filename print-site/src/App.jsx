@@ -1,13 +1,13 @@
 
-import { StickyNavbar } from './components/navbar'
+import Homepage from './components/Homepage'
 
 function App() {
 
 
   return (
-    <>
-      <StickyNavbar/>
-    </>
+    <div>
+      <Homepage />
+    </div>
   )
 }
 
