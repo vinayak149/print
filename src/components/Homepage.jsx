@@ -7,14 +7,30 @@ import PaintDropAnimation from '../animations/PaintDrop';
 import Footer from "./Footer";
 import "../styles/Homepage.css";
 import Navbar from './Navbar';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Homepage = () => {
+
+
+  const carouselSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    arrows: false,
+  };
+
+
   return (
     <div className="relative flex flex-col min-h-screen font-roboto">
       <Navbar/>
 
-      <main className="flex-grow">
-        <div className="relative" style={{ height: "60vh", background: "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(12,12,98,1) 35%, rgba(0,212,255,1) 100%)" }}>
+     <main className="flex-grow">
+        <div className="relative" style={{ height: "90vh", background: "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(12,12,98,1) 35%, rgba(0,212,255,1) 100%)" }}>
           <div className="container mx-auto px-4 py-16 flex">
             <div className="w-1/2">
               <h2 className="text-5xl font-light">
@@ -30,8 +46,20 @@ const Homepage = () => {
                 READ MORE
               </button>
             </div>
+
+            {/* Image Carousel */}
             <div className="w-1/2 relative">
-              <img src={mainPic} alt="Product Showcase" className="absolute top-0 right-0 transform" />
+              <Slider {...carouselSettings}>
+                <div>
+                  <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=1000&q=80" alt="Carousel Image 1" className="w-full h-96 object-cover" />
+                </div>
+                <div>
+                  <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1000&q=80" alt="Carousel Image 2" className="w-full h-96 object-cover" />
+                </div>
+                <div>
+                  <img src="https://images.unsplash.com/photo-1476234251651-f353703a034d?auto=format&fit=crop&w=1000&q=80" alt="Carousel Image 3" className="w-full h-96 object-cover" />
+                </div>
+              </Slider>
             </div>
           </div>
         </div>
