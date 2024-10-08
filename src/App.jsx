@@ -6,7 +6,8 @@ import Services from "./components/Services";
 import Strengths from "./components/Strengths";
 import Financials from "./components/Financials";
 import Contact from "./components/Contact";
-import { BrowserRouter as Router, Routes , Route} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 
 
 const App = () => {
