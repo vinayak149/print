@@ -1,9 +1,5 @@
 import React from 'react';
-import { Search } from 'lucide-react';
-import mainPic from "../assets/main-hero.png";
 import strengthsPic from "../assets/strengths-hero.png";
-import logo from "../assets/main-logo.png";
-import PaintDropAnimation from '../animations/PaintDrop';
 import Footer from "./Footer";
 import "../styles/Homepage.css";
 import Navbar from './Navbar';
@@ -109,8 +105,8 @@ const Homepage = () => {
         <Parallax
           translateY={['-6%', '10%']}
           easing="easeInOutQuad">
-          <div className="our-services-container" style={{ marginTop: "100px" }}>
-            <h2 className="our-services-title">OUR SERVICES</h2>
+          <div className="our-services-container" style={{ marginTop: "100px"}}>
+            <h2 className="our-services-title" style={{fontFamily: "Poppins", fontWeight: "400"}}>OUR SERVICES</h2>
             <div className="services-grid">
               <div className="service-item financial-printing">
                 <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1000&q=80" alt="Annual Reports" />
