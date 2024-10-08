@@ -105,7 +105,7 @@ const AccordionUsage = () => {
             }}
           >
             <Typography>
-              SAP Print Solutions aims to invest in technology that improves quality and efficiency.
+              Divine Print Solutions aims to invest in technology that improves quality and efficiency.
             </Typography>
           </AccordionDetails>
         </Accordion>
