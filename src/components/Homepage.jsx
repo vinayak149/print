@@ -101,25 +101,70 @@ const Homepage = () => {
           </div>
         </div>
 
-        <Parallax
-          translateY={['-6%', '10%']}
-          easing="easeInOutQuad">
-          <div className="our-services-container" style={{ marginTop: "100px" }}>
-            <h2 className="our-services-title" style={{ fontFamily: "Poppins", fontWeight: "400" }}>OUR SERVICES</h2>
-            <div className="services-grid">
-              {/* Services section code */}
+      
+          <div className="our-services-container mt-24 px-4 lg:px-0">
+            <h2 className="our-services-title text-center text-3xl lg:text-4xl font-normal" style={{ fontFamily: "Poppins", fontWeight: "400" }}>
+              OUR SERVICES
+            </h2>
+
+            {/* Responsive Grid */}
+            <div className="services-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 mt-8">
+              {/* Service Item: Financial Printing */}
+              <div className="service-item">
+                <img
+                  src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1000&q=80"
+                  alt="Annual Reports"
+                  className="w-full h-64 object-cover"
+                />
+                <span className="service-name block text-center text-lg mt-4 font-semibold">
+                  FINANCIAL PRINTING
+                </span>
+              </div>
+
+              {/* Service Item: Publishing Solutions */}
+              <div className="service-item">
+                <img
+                  src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1000&q=80"
+                  alt="Kids School Education Books"
+                  className="w-full h-64 object-cover"
+                />
+                <span className="service-name block text-center text-lg mt-4 font-semibold">
+                  PUBLISHING SOLUTIONS
+                </span>
+              </div>
+
+              {/* Service Item: Commercial Printing */}
+              <div className="service-item">
+                <img
+                  src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=1000&q=80"
+                  alt="Furniture Catalogue"
+                  className="w-full h-64 object-cover"
+                />
+                <span className="service-name block text-center text-lg mt-4 font-semibold">
+                  COMMERCIAL PRINTING
+                </span>
+              </div>
+
+              {/* Service Item: Digital Setup */}
+              <div className="service-item">
+                <img
+                  src="https://images.unsplash.com/photo-1476234251651-f353703a034d?auto=format&fit=crop&w=1000&q=80"
+                  alt="Colorful Magazine Pages"
+                  className="w-full h-64 object-cover"
+                />
+                <span className="service-name block text-center text-lg mt-4 font-semibold">
+                  DIGITAL SETUP
+                </span>
+              </div>
             </div>
           </div>
-        </Parallax>
+
+       
       </main>
 
-      <Parallax
-        translateY={['-10%', '10%']}
-        easing="easeInOutQuad"
-        className="relative z-10"
-        style={{ minHeight: '30vh' }}>
+
         <Footer className="absolute bottom-0 w-full" />
-      </Parallax>
+     
     </div>
   );
 };
