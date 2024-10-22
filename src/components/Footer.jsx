@@ -1,5 +1,3 @@
-
-
 const Footer = () => {
   return (
     <footer className="text-white" style={{marginTop: "20vh",background: "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(12,12,98,1) 35%, rgba(0,212,255,1) 100%)", fontSize: "15px"}}>

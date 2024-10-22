@@ -38,7 +38,7 @@ const Contact = () => {
                         </div>
                     ))}
                 </Slider>
-                <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                <div className="absolute mb-[8px] inset-0 bg-black bg-opacity-50 flex items-center justify-center">
                     <h1 className="text-white text-5xl" style={{ fontFamily: "Poppins", fontWeight: "500" }}>CONTACT US</h1>
                 </div>
             </div>
