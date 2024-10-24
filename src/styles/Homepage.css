@@ -2,7 +2,9 @@
     width: 100%;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(12,12,98,1) 35%, rgba(0,212,255,1) 100%);
-    padding-top: 20px;
+    padding-top: 50px;
+    height: 100vh;
+    margin-bottom: 20%;
   }
   .our-services-title {
     color: white;
@@ -15,18 +17,21 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    height: 600px;
+    height: 500px;
+    width: 100%;
   }
   .service-item {
     position: relative;
     overflow: hidden;
   }
   .service-item img {
-    width: 100%;
+    width: 80%;
     height: 100%;
     object-fit: cover;
+    margin-left: 15%;
   }
   .service-name {
+    margin-left: 15%;
     position: absolute;
     bottom: 20px;
     left: 20px;

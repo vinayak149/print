@@ -6,31 +6,31 @@ const Footer = () => {
           <div>
             <h3 className="font-bold mb-4">MAIN LINKS</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:underline">Home</a></li>
-              <li><a href="#" className="hover:underline">About Us</a></li>
-              <li><a href="#" className="hover:underline">Infrastructure</a></li>
-              <li><a href="#" className="hover:underline">Our Strengths</a></li>
-              <li><a href="#" className="hover:underline">Financials</a></li>
-              <li><a href="#" className="hover:underline">Contact Us</a></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about">About Us</a></li>
+              <li><a href="/infrastructure">Infrastructure</a></li>
+              <li><a href="/strengths">Our Strengths</a></li>
+              <li><a href="/financials">Financials</a></li>
+              <li><a href="/contact">Contact Us</a></li>
             </ul>
           </div>
           <div>
             <h3 className="font-bold mb-4">OUR SERVICES</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:underline">Financial Printing</a></li>
-              <li><a href="#" className="hover:underline">Publishing solutions</a></li>
-              <li><a href="#" className="hover:underline">Commercial Printing</a></li>
-              <li><a href="#" className="hover:underline">Digital Setup</a></li>
-              <li><a href="#" className="hover:underline">Design Studio</a></li>
-              <li><a href="#" className="hover:underline">Corrugation</a></li>
+              <li><a href="/financial-printing">Financial Printing</a></li>
+              <li><a href="/publishing-solutions">Publishing solutions</a></li>
+              <li><a href="/commercial-printing" >Commercial Printing</a></li>
+              <li><a href="/digital-printing" >Digital Printing</a></li>
+              <li><a href="/design-studio" >Design Studio</a></li>
+              <li><a href="/corrugation">Corrugation</a></li>
             </ul>
           </div>
           <div>
             <h3 className="font-bold mb-4">OTHER LINKS</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:underline">Warehouse & Logistics</a></li>
-              <li><a href="#" className="hover:underline">Certifications</a></li>
-              <li><a href="#" className="hover:underline">Our Policies</a></li>
+              <li><a href="#">Warehouse & Logistics</a></li>
+              <li><a href="#">Certifications</a></li>
+              <li><a href="#">Our Policies</a></li>
             </ul>
           </div>
           <div>
@@ -58,7 +58,7 @@ const Footer = () => {
       </div>
       <div className="text-white py-8">
         <div className="container mx-auto px-4 flex justify-between items-center">
-          <p>Copyright © 2024 Example Print Solutions Pvt. Ltd. | Terms & Conditions | Privacy Policy</p>
+          <p>Copyright © 2024 Divine Print Solutions Pvt. Ltd. | Terms & Conditions | Privacy Policy</p>
           <a href="#" className="hover:underline">Site Map</a>
         </div>
       </div>

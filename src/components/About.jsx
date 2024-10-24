@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 const About = () => {
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
@@ -27,8 +27,6 @@ const About = () => {
     return (
         <div>
             <Navbar />
-
-            {/* Image Carousel with Text Overlay */}
             <div className="relative">
                 <Slider {...settings}>
                     {images.map((image, index) => (
@@ -48,10 +46,23 @@ const About = () => {
 
             <div className="container mx-auto py-16 px-4" style={{ fontFamily: "Poppins", width: "1200px" }}>
                 <p className="text-gray-800 text-lg mb-10">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus iste, expedita accusamus enim autem, dignissimos doloremque earum animi vero repellat assumenda corrupti eius officia quae? Quaerat rerum, debitis voluptatum voluptatem accusantium delectus dolorem laudantium sapiente magnam molestias dolore necessitatibus, pariatur, ipsam ad placeat aut cum dolorum facilis est facere nostrum.
+                    Divine Print Solution, based in Sivakasi, India, was established in 2022
+                    with a vision to become a leading print solutions provider. Founded by
+                    a team of dynamic and experienced professionals, each with over two
+                    decades of expertise in the printing industry, the company has rapidly
+                    expanded to serve businesses both locally and globally.
+                    We are committed to delivering top-quality printing services with
+                    exceptional customer care to businesses and organizations of all sizes.
+                    At Divine Print Solution, we understand the importance of staying
+                    ahead with the latest technology to offer our clients the best quality
+                    and service.
                 </p>
                 <p className="text-gray-800 text-lg">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis quia natus inventore commodi pariatur. Asperiores, distinctio tenetur optio id quo quod pariatur dolores, odit inventore earum doloremque facilis facere itaque alias ipsa deserunt? Laudantium ratione alias deleniti, consectetur nulla veritatis, commodi id asperiores ex repellendus earum a dolore quibusdam sed!
+                    Whether it’s upgrading our software, investing in cutting-
+                    edge prepress and press technologies, or enhancing our finishing
+                    processes, we continuously strive to improve the efficiency, quality, and
+                    value of our services.
+                    Our goal is to help you achieve perfection in every print, every time.
                 </p>
                 <div style={{ marginTop: "80px" }}>
                     <Accordion />

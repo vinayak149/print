@@ -7,10 +7,11 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Parallax } from 'react-scroll-parallax';
+import { Link } from 'react-router-dom';
 
 const Homepage = () => {
   const carouselSettings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -25,8 +26,7 @@ const Homepage = () => {
 
       <main className="flex-grow">
         <div className="relative" style={{ height: "90vh", background: "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(12,12,98,1) 35%, rgba(0,212,255,1) 100%)" }}>
-          <div className="container mx-auto px-4 py-16 flex flex-col lg:flex-row">
-            {/* Adjust this section to stack content on smaller screens */}
+          <div className="container mx-auto px-4 py-36 flex flex-col lg:flex-row">
             <div className="lg:w-1/2 w-full mb-8 lg:mb-0 text-center lg:text-left">
               <h2 className="text-4xl lg:text-5xl font-light">
                 <span className="text-white">Our</span><br />
@@ -37,12 +37,15 @@ const Homepage = () => {
                 At Divine Print Solutions Pvt Ltd we are inspired by the philosophy, "How can sky
                 be the limit when there are imprints on the moon". Our Performance Speaks.
               </p>
-              <button className="mt-6 bg-white text-[#162c7a]-900 px-6 py-2 rounded-full font-semibold hover:bg-yellow-400 transition-colors">
-                READ MORE
-              </button>
+              <Link to="/about">
+                <button className="mt-6 bg-white text-[#162c7a]-900 px-6 py-2 rounded-full font-semibold hover:bg-blue-300 transition-colors">
+                  READ MORE
+                </button>
+              </Link>
+               
+
             </div>
 
-            {/* Carousel with responsiveness */}
             <div className="lg:w-1/2 w-full relative">
               <Slider {...carouselSettings}>
                 <div>
@@ -59,7 +62,6 @@ const Homepage = () => {
           </div>
         </div>
 
-        {/* Other sections stay the same but with responsive tweaks */}
         <div className="bg-sky-300 py-16">
           <div className="container mx-auto" style={{ marginTop: "100px", fontFamily: "Poppins", fontWeight: "500" }}>
             <div className="flex flex-wrap items-center">
@@ -101,70 +103,82 @@ const Homepage = () => {
           </div>
         </div>
 
-      
-          <div className="our-services-container mt-24 px-4 lg:px-0">
-            <h2 className="our-services-title text-center text-3xl lg:text-4xl font-normal" style={{ fontFamily: "Poppins", fontWeight: "400" }}>
-              OUR SERVICES
-            </h2>
 
-            {/* Responsive Grid */}
-            <div className="services-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 mt-8">
-              {/* Service Item: Financial Printing */}
-              <div className="service-item">
-                <img
-                  src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1000&q=80"
-                  alt="Annual Reports"
-                  className="w-full h-64 object-cover"
-                />
-                <span className="service-name block text-center text-lg mt-4 font-semibold">
-                  FINANCIAL PRINTING
-                </span>
-              </div>
+        <div className="our-services-container mt-24 px-4 lg:px-0">
+          <h2 className="our-services-title text-center text-3xl lg:text-4xl font-normal" style={{ fontFamily: "Poppins", fontWeight: "400" }}>
+            OUR SERVICES
+          </h2>
+          <div className="services-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-14">
+            <div className="service-item">
+              <img
+                src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1000&q=80"
+                alt="Annual Reports"
+                className="w-full h-64 object-cover"
+              />
+              <span className="service-name block text-center text-lg mt-4 font-semibold">
+                FINANCIAL PRINTING
+              </span>
+            </div>
 
-              {/* Service Item: Publishing Solutions */}
-              <div className="service-item">
-                <img
-                  src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1000&q=80"
-                  alt="Kids School Education Books"
-                  className="w-full h-64 object-cover"
-                />
-                <span className="service-name block text-center text-lg mt-4 font-semibold">
-                  PUBLISHING SOLUTIONS
-                </span>
-              </div>
+            <div className="service-item">
+              <img
+                src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1000&q=80"
+                alt="Kids School Education Books"
+                className="w-full h-64 object-cover"
+              />
+              <span className="service-name block text-center text-lg mt-4 font-semibold">
+                PUBLISHING SOLUTIONS
+              </span>
+            </div>
 
-              {/* Service Item: Commercial Printing */}
-              <div className="service-item">
-                <img
-                  src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=1000&q=80"
-                  alt="Furniture Catalogue"
-                  className="w-full h-64 object-cover"
-                />
-                <span className="service-name block text-center text-lg mt-4 font-semibold">
-                  COMMERCIAL PRINTING
-                </span>
-              </div>
+            <div className="service-item">
+              <img
+                src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=1000&q=80"
+                alt="Furniture Catalogue"
+                className="w-full h-64 object-cover"
+              />
+              <span className="service-name block text-center text-lg mt-4 font-semibold">
+                COMMERCIAL PRINTING
+              </span>
+            </div>
 
-              {/* Service Item: Digital Setup */}
-              <div className="service-item">
-                <img
-                  src="https://images.unsplash.com/photo-1476234251651-f353703a034d?auto=format&fit=crop&w=1000&q=80"
-                  alt="Colorful Magazine Pages"
-                  className="w-full h-64 object-cover"
-                />
-                <span className="service-name block text-center text-lg mt-4 font-semibold">
-                  DIGITAL SETUP
-                </span>
-              </div>
+            <div className="service-item">
+              <img
+                src="https://images.unsplash.com/photo-1476234251651-f353703a034d?auto=format&fit=crop&w=1000&q=80"
+                alt="Colorful Magazine Pages"
+                className="w-full h-64 object-cover"
+              />
+              <span className="service-name block text-center text-lg mt-4 font-semibold">
+                DIGITAL PRINTING
+              </span>
+            </div>
+
+            <div className="service-item">
+              <img
+                src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=1000&q=80"
+                alt="Packaging Solutions"
+                className="w-full h-64 object-cover"
+              />
+              <span className="service-name block text-center text-lg mt-4 font-semibold">
+                DESIGN STUDIO
+              </span>
+            </div>
+
+            <div className="service-item">
+              <img
+                src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1000&q=80"
+                alt="Custom Printing"
+                className="w-full h-64 object-cover"
+              />
+              <span className="service-name block text-center text-lg mt-4 font-semibold">
+                CORRUGATION
+              </span>
             </div>
           </div>
-
-       
+        </div>
       </main>
+      <Footer />
 
-
-        <Footer className="absolute bottom-0 w-full" />
-     
     </div>
   );
 };
