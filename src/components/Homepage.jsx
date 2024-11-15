@@ -42,7 +42,7 @@ const Homepage = () => {
                   READ MORE
                 </button>
               </Link>
-               
+
 
             </div>
 
