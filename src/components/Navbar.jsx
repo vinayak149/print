@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../assets/main-logo.png";
+import logo from "../assets/main-logo.jpg";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -15,7 +15,6 @@ const Navbar = () => {
             <header className="bg-white shadow-md py-4">
                 <div className="container mx-auto px-4">
                     <div className="flex justify-between items-center">
-                        {/* Logo */}
                         <div className="flex items-center">
                             <img
                                 src={logo}
@@ -26,7 +25,6 @@ const Navbar = () => {
                             />
                         </div>
 
-                        {/* Nav Links - Hidden on small screens, shown on large */}
                         <nav className="hidden lg:flex flex-grow justify-center items-center space-x-8">
                             <Link
                                 to="/"
@@ -47,7 +45,6 @@ const Navbar = () => {
                                 INFRASTRUCTURE
                             </Link>
 
-                            {/* Services Dropdown */}
                             <div className="relative">
                                 <button
                                     onClick={toggleDropdown}
@@ -129,7 +126,6 @@ const Navbar = () => {
 
 
 
-                {/* Hamburger Menu for small screens */}
                 <div className="lg:hidden">
                     <button
                         onClick={toggleMenu}
@@ -140,7 +136,6 @@ const Navbar = () => {
                 </div>
 
 
-                {/* Mobile Menu - shown when hamburger is clicked */}
                 {isOpen && (
                     <nav className="lg:hidden bg-white shadow-md">
                         <ul className="flex flex-col items-center space-y-4 py-4">

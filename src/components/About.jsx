@@ -40,11 +40,11 @@ const About = () => {
                     ))}
                 </Slider>
                 <div className="absolute mb-[8px] inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                    <h1 className="text-white text-5xl" style={{ fontFamily: "Poppins", fontWeight: "500" }}>ABOUT US</h1>
+                    <h1 className="text-white text-5xl" style={{ fontFamily: "DM Sans", fontWeight: "500" }}>ABOUT US</h1>
                 </div>
             </div>
 
-            <div className="container mx-auto py-16 px-4" style={{ fontFamily: "Poppins", width: "1200px" }}>
+            <div className="container mx-auto py-16 px-4" style={{ fontFamily: "DM Sans", width: "1200px" }}>
                 <p className="text-gray-800 text-lg mb-10">
                     Divine Print Solution, based in Sivakasi, India, was established in 2022
                     with a vision to become a leading print solutions provider. Founded by
@@ -69,7 +69,7 @@ const About = () => {
                 </div>
             </div>
 
-            <div className="bg-white py-24" style={{ fontFamily: "Poppins", fontWeight: "300" }}>
+            <div className="bg-white py-24" style={{ fontFamily: "DM Sans", fontWeight: "300" }}>
                 <div className="container mx-auto px-4">
                     <h2 className="text-3xl font-bold mb-8 text-center">OUR STRENGTHS</h2>
                     <p className="text-center mb-12 max-w-3xl mx-auto">

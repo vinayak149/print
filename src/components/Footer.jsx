@@ -1,6 +1,9 @@
 const Footer = () => {
   return (
-    <footer className="text-white" style={{marginTop: "20vh",background: "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(12,12,98,1) 35%, rgba(0,212,255,1) 100%)", fontSize: "15px"}}>
+    <footer className="text-white" style={
+      {height:"55vh",bottom:0,background: "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(12,12,98,1) 35%, rgba(0,212,255,1) 100%)", fontSize: "15px",
+        width:"100%",zIndex:-10
+      }}>
       <div className="container mx-auto px-8 py-20" >
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>

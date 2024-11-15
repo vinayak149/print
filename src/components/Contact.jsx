@@ -7,7 +7,7 @@ import Footer from "./Footer.jsx";
 
 const Contact = () => {
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
@@ -39,7 +39,7 @@ const Contact = () => {
                     ))}
                 </Slider>
                 <div className="absolute mb-[8px] inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                    <h1 className="text-white text-5xl" style={{ fontFamily: "Poppins", fontWeight: "500" }}>CONTACT US</h1>
+                    <h1 className="text-white text-5xl" style={{ fontFamily: "DM Sans", fontWeight: "500" }}>CONTACT US</h1>
                 </div>
             </div>
 
@@ -57,7 +57,7 @@ const Contact = () => {
                     ></iframe>
                 </div>
 
-                <div className="w-full md:w-1/2 flex flex-col justify-center px-24" style={{fontFamily: "Poppins"}}>
+                <div className="w-full md:w-1/2 flex flex-col justify-center px-24" style={{fontFamily: "DM Sans"}}>
                     <h2 className="text-3xl font-bold mb-6 ">Corporate Office</h2>
                     <p className="mb-2">2/2222K, Sasinagar North,</p>
                     <p className="mb-2">Sithurajapuram, SIVAKASI, Tamil Nadu, India</p>

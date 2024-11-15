@@ -1,10 +1,9 @@
 .our-services-container {
     width: 100%;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(12,12,98,1) 35%, rgba(0,212,255,1) 100%);
+    background: radial-gradient(at 40% 97%, #200f21 0px, transparent 50%), radial-gradient(at 61% 62%, #382039 0px, transparent 50%), radial-gradient(at 57% 28%, #5a3d5c 0px, transparent 50%), radial-gradient(at 36% 13%, #f638dc 0px, transparent 50%), #200f21;
     padding-top: 50px;
     height: 100vh;
-    margin-bottom: 20%;
+    z-index: 5;
   }
   .our-services-title {
     color: white;
@@ -40,15 +39,6 @@
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
   }
-  .financial-printing {
-    background-color: #808080;
-  }
-  .publishing-solutions {
-    background-color: #00a0e9;
-  }
-  .commercial-printing {
-    background-color: #ff4500;
-  }
-  .digital-setup {
-    background-color: #00a0e9;
-  }
+
+
+  
