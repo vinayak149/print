@@ -39,14 +39,14 @@ export default function Strengths() {
                     ))}
                 </Slider>
                 <div className="absolute mb-[8px] inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                    <h1 className="text-white text-5xl" style={{ fontFamily: "Poppins", fontWeight: "500" }}>OUR STRENGTHS</h1>
+                    <h1 className="text-white text-5xl" style={{ fontFamily: "DM Sans", fontWeight: "500" }}>OUR STRENGTHS</h1>
                 </div>
             </div>
 
             <div className="container mx-auto px-4 py-12">
                 <div className="bg-white p-6">
-                    <h2 className="text-4xl font-bold mb-6" style={{ fontFamily: "Poppins",marginBottom:"90px",marginLeft: "20px" }}>OUR STRENGTHS</h2>
-                    <ul className="space-y-4 text-gray-700" style={{ listStyleType: "disc", marginLeft: "20px", fontFamily: "Poppins" }}>
+                    <h2 className="text-4xl font-bold mb-6" style={{ fontFamily: "DM Sans",marginBottom:"90px",marginLeft: "20px" }}>OUR STRENGTHS</h2>
+                    <ul className="space-y-4 text-gray-700" style={{ listStyleType: "disc", marginLeft: "20px", fontFamily: "DM Sans" }}>
                         <p>Divine Print Solution is a comprehensive print solutions company
                             offering a complete range of services including Design Studio, Pre-
                             press, Post-press, Digital Printing, Variable Printing, as well as

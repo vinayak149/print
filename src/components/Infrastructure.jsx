@@ -10,7 +10,7 @@ const Infrastructure = () => {
             <Navbar />
             <Box sx={{ backgroundColor: '#f0f0f0', padding: '20px' }}>
                 <Typography variant="h4" sx={{
-                    fontFamily: "Poppins",
+                    fontFamily: "DM Sans",
                     fontWeight: "500",
                     marginBottom: "20px",
                     marginTop:"20px",
@@ -48,7 +48,7 @@ const Infrastructure = () => {
                     maxWidth: '800px',
                     flexShrink: 0
                 }}>
-                    <Typography variant="body1" sx={{ fontFamily: "Poppins", textAlign: 'justify', marginBottom: '60px', marginTop: "20px" }}>
+                    <Typography variant="body1" sx={{ fontFamily: "DM Sans", textAlign: 'justify', marginBottom: '60px', marginTop: "20px" }}>
                         Over the years, the printing industry has witnessed significant growth
                         worldwide, and India is no exception. The industry here has evolved into
                         a highly competitive and dynamic field. The rise of the Internet has

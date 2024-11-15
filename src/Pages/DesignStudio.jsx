@@ -41,14 +41,14 @@ const DesignStudio = () => {
           ))}
         </Slider>
         <div className="absolute mb-[8px] inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <h1 className="text-white text-5xl" style={{ fontFamily: "Poppins", fontWeight: "500" }}>OUR SERVICES</h1>
+          <h1 className="text-white text-5xl" style={{ fontFamily: "DM Sans", fontWeight: "500" }}>OUR SERVICES</h1>
         </div>
       </div>
 
       <div className="container mx-auto px-4 py-12">
         <div className="bg-white p-6">
-          <h2 className="text-4xl font-bold mb-6" style={{ fontFamily: "Poppins", marginBottom: "90px", marginLeft: "20px" }}>Design Studio</h2>
-          <ul className="space-y-4 text-gray-700" style={{ listStyleType: "square", marginLeft: "20px", fontFamily: "Poppins" }}>
+          <h2 className="text-4xl font-bold mb-6" style={{ fontFamily: "DM Sans", marginBottom: "90px", marginLeft: "20px" }}>Design Studio</h2>
+          <ul className="space-y-4 text-gray-700" style={{ listStyleType: "square", marginLeft: "20px", fontFamily: "DM Sans" }}>
             <p>At Divine Print Solution, our Design Studio offers end-to-end support
               for educational book publishers and corporate clients, turning raw
               content into professionally designed and visually appealing books. We

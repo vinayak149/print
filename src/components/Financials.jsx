@@ -42,36 +42,6 @@ const Financials = () => {
                     <h1 className="text-white text-5xl" style={{ fontFamily: "Poppins", fontWeight: "500" }}>FINANCIALS</h1>
                 </div>
             </div>
-
-            {/* <div className="container mx-auto px-4 py-12">
-                <div className="bg-white p-6">
-                    <h2 className="text-4xl font-bold mb-6" style={{ fontFamily: "Poppins",marginBottom:"90px",marginLeft: "20px" }}>OUR STRENGTHS</h2>
-                    <ul className="space-y-4 text-gray-700" style={{ listStyleType: "disc", marginLeft: "20px", fontFamily: "Poppins" }}>
-                        <p>Divine Print Solution is a comprehensive print solutions company
-                            offering a complete range of services including Design Studio, Pre-
-                            press, Post-press, Digital Printing, Variable Printing, as well as
-                            Warehousing and Logistic Management across the globe.
-                        </p>
-
-                        <br /><br />
-                        <li><strong>Robust Infrastructure:</strong> Equipped with Digital, Sheet-fed, and Web-fed
-                            machines, with in-house design, layout, scanning, and archiving services.</li>
-                        <li><strong>Specialized Hard-case Book Binding:</strong> One of the finest setups for hard-case
-                            book binding in Western India.</li>
-                        <li><strong>24/7 Customer Support:</strong> Available round the clock to assist clients and
-                            provide prompt solutions.</li>
-                        <li><strong>Fastest Turnaround:</strong> Proven, consistent performance across our three primary
-                            business verticals—Financial Printing, Commercial Printing, and Publishing
-                            Solutions.</li>
-                        <li><strong>lobal Procurement Network:</strong> Extensive paper storage capacity of over 1000
-                        tons.</li>
-                        <li><strong>Efficient Warehouse and Logistics:</strong> A streamlined inventory management and
-                        on-demand logistics support system, both in India and internationally.</li>
-                        <li><strong>Tech-Savvy Organization:</strong> Continuously embracing cutting-edge technology
-                        and committed to constant upgradation.</li>
-                    </ul>
-                </div>
-            </div> */}
             <Footer />
         </div>
     );
