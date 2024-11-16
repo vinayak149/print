@@ -1,6 +1,6 @@
 .our-services-container {
     width: 100%;
-    background: radial-gradient(at 40% 97%, #200f21 0px, transparent 50%), radial-gradient(at 61% 62%, #382039 0px, transparent 50%), radial-gradient(at 57% 28%, #5a3d5c 0px, transparent 50%), radial-gradient(at 36% 13%, #f638dc 0px, transparent 50%), #200f21;
+    background: linear-gradient(to right, #fcd34d, #f59e0b, #d97706);
     padding-top: 50px;
     height: 100vh;
     z-index: 5;
