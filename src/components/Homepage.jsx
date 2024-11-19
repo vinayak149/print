@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 // import { Parallax } from 'react-scroll-parallax';
 import { Link } from 'react-router-dom';
-// import { PaintDropAnimation } from '../animations/PaintDrop.jsx'
+import PaintDropAnimation from '../animations/PaintDrop.jsx'
 
 const Homepage = () => {
   const carouselSettings = {
@@ -26,7 +26,7 @@ const Homepage = () => {
       <div className="relative flex flex-col min-h-screen">
         <Navbar />
 
-        <main className="flex-grow" >
+        <main className="flex-grow relative" >
           <div className="relative" style={{ zIndex: 10, fontFamily: "DM Sans", fontWeight: "500", height: "90vh", background: "linear-gradient(to right, #fcd34d, #f59e0b, #d97706)" }}>
             <div className="container mx-auto px-4 py-36 flex flex-col lg:flex-row">
               <div className="lg:w-1/2 w-full mb-8 lg:mb-0 text-center lg:text-left">
@@ -64,9 +64,12 @@ const Homepage = () => {
             </div>
           </div>
 
-          <div className="bg-sky-300 py-16">
-            {/* <PaintDropAnimation color="bg-fuchsia-500" duration={1.5} /> */}
-            <div className="container mx-auto" style={{ zIndex: 10, marginTop: "100px", fontFamily: "DM Sans", fontWeight: "500" }}>
+          <div className=" py-16 relative">
+            <PaintDropAnimation
+              duration={1.5}
+              className="absolute inset-0 " 
+            />
+            <div className="container mx-auto relative" style={{ zIndex: 20, marginTop: "100px", fontFamily: "DM Sans", fontWeight: "500" }}>
               <div className="flex flex-wrap items-center">
                 <div className="w-full lg:w-1/2 mb-8 lg:mb-0 text-center lg:text-left">
                   <h2 className="text-3xl mb-4">
@@ -108,7 +111,7 @@ const Homepage = () => {
 
 
           <div className="our-services-container mt-24 px-4 lg:px-0">
-            <h2 className="our-services-title text-center text-3xl lg:text-4xl font-normal" style={{ zIndex: 10, fontFamily: "DM Sans", fontWeight: "700", background:"linear-gradient(to right, #fcd34d, #f59e0b, #d97706)" }}>
+            <h2 className="our-services-title text-center text-3xl lg:text-4xl font-normal" style={{ zIndex: 10, fontFamily: "DM Sans", fontWeight: "700", background: "linear-gradient(to right, #fcd34d, #f59e0b, #d97706)" }}>
               OUR SERVICES
             </h2>
             <div className="services-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-14">
