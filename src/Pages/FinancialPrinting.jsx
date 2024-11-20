@@ -59,44 +59,45 @@ const FinancialPrinting = () => {
                             Our team of 26 professionals, including experts in Creative Design,
                             DTP, Proofreading, and Copy Editing, ensures that every project is
                             handled with precision and attention to detail. We also provide on-site
-                            DTP facilities across India for faster and more convenient service.
+                            DTP facilities across India for faster and more convenient service. We ensure timely and accurate dispatch through India Post and
+                            reputable courier services across the country.
                         </p>
 
                         <br /><br />
                         <li><strong>Variable Printing & Barcoding:</strong> We offer specialized Variable Printing and Barcoding for various
                             applications such as:
-                            IPO & NFO Application Forms
-                            Proposal Forms
-                            Common Application Forms (CAF)
-                            Postal Ballot Forms
-                            Attendance Slips
-                            Customized stationery for the BFSI sector (Banking, Financial Services, and
-                            Insurance)
-                            Mailing address slips
-                            With an in-house capacity of producing 2 million application forms
-                            daily, we meet the high-volume demands of our clients.</li>
+                            <ul style={{ listStyleType: "square", marginLeft: "40px" }}>
+                                <li>IPO & NFO Application Forms</li>
+                                <li>Proposal Forms</li>
+                                <li>Common Application Forms (CAF)</li>
+                                <li>Postal Ballot Forms</li>
+                                <li>Attendance Slips</li>
+                                <li>Customized stationery for the BFSI sector (Banking, Financial Services, and
+                                    Insurance)</li>
+                                <li> Mailing address slips</li>
+                                <li>With an in-house capacity of producing 2 million application forms
+                                daily, we meet the high-volume demands of our clients.</li>
+
+                            </ul>   
+                        </li>
+                        
                         <li><strong>Mutual Fund Industry Support:</strong> We print and dispatch essential documents for the Mutual Fund
                             industry, including:
-                             Monthly Fact Sheets
-                             Key Information Memorandums (KIM)
-                             Offer Documents
-                            We ensure timely and accurate dispatch through India Post and
-                            reputable courier services across the country.
-                            Highlights
-                             India’s No. 1 Financial Printing Solution Provider
-                             Capacity to print and bind 100,000 A4 Annual Reports within just 3 days
-                             Typesetting capacity of 750 pages per day</li>
-                        {/* <li><strong>24/7 Customer Support:</strong> Available round the clock to assist clients and
-                            provide prompt solutions.</li>
-                        <li><strong>Fastest Turnaround:</strong> Proven, consistent performance across our three primary
-                            business verticals—Financial Printing, Commercial Printing, and Publishing
-                            Solutions.</li>
-                        <li><strong>lobal Procurement Network:</strong> Extensive paper storage capacity of over 1000
-                            tons.</li>
-                        <li><strong>Efficient Warehouse and Logistics:</strong> A streamlined inventory management and
-                            on-demand logistics support system, both in India and internationally.</li>
-                        <li><strong>Tech-Savvy Organization:</strong> Continuously embracing cutting-edge technology
-                            and committed to constant upgradation.</li> */}
+                            <ul style={{ listStyleType: "square", marginLeft: "40px" }}>
+                                <li>Monthly Fact Sheets</li>
+                                <li>Key Information Memorandums (KIM)</li>
+                                <li>Offer Documents</li>
+                            </ul>
+                        
+                            <br/><br/>
+                            <li><strong>Highlights</strong></li>
+                            <ul style={{ listStyleType: "square", marginLeft: "40px" }}>
+                                <li>India’s No. 1 Financial Printing Solution Provider</li>
+                                <li>Capacity to print and bind 100,000 A4 Annual Reports within just 3 days</li>
+                                <li>Typesetting capacity of 750 pages per day</li>
+                            </ul>
+                            
+                        </li>
                     </ul>
                 </div>
             </div>

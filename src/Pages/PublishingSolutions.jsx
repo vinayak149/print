@@ -70,15 +70,18 @@ const PublishingSolutions = () => {
               With advanced Digital, Sheet-fed, and Web-fed printing capabilities,
               our facility is perfectly equipped to handle a wide range of publishing
               needs. We are ideally suited to meet the specific size and format
-              requirements of both Indian and international publishers.
-              Highlights
-               Flexible printing solutions with a range of cut-off sizes to meet the diverse
-              needs of global publishers.
-               Capacity to perfect bind 150,000 books and section sew 200,000 books per
-              day.
-               Self-owned warehouse with a storage capacity of over 5,000 metric tons.
-               Comprehensive kitting facilities, offering tier 1 to tier 4 services to provide
+              requirements of both Indian and international publishers.</li>
+
+            <li><strong>Highlights</strong></li>
+            <ul style={{ listStyleType: "square", marginLeft: "40px" }}>
+              <li>Flexible printing solutions with a range of cut-off sizes to meet the diverse
+              needs of global publishers.</li>
+              <li>Capacity to perfect bind 150,000 books and section sew 200,000 books per
+              day.</li>
+              <li>Self-owned warehouse with a storage capacity of over 5,000 metric tons.</li>
+              <li>Comprehensive kitting facilities, offering tier 1 to tier 4 services to provide
               added value to educational institutions and book publishers.</li>
+            </ul>
           </ul>
         </div>
       </div>

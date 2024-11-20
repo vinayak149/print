@@ -13,42 +13,50 @@ const Infrastructure = () => {
                     fontFamily: "DM Sans",
                     fontWeight: "500",
                     marginBottom: "20px",
-                    marginTop:"20px",
-                    paddingLeft: "10%"
+                    marginTop: "20px",
+                    paddingLeft: { xs: "10%", sm: "15%", md: "20%" }, 
                 }}>
                     Our Infrastructure
                 </Typography>
             </Box>
 
-            {/* Parent container for the two-column layout */}
+          
             <Box sx={{
                 display: 'flex',
-                flexDirection: 'row',
+                flexDirection: { xs: 'column', sm: 'row' }, 
                 padding: '20px',
-                width: '85%',
-                margin: 'auto'
+                width: '100%',
+                margin: 'auto',
+                flexWrap: 'wrap',
             }}>
 
-                {/* Left side: Main content */}
+            
                 <Box sx={{
-                    flex: '3',
-                    marginRight: '30px',
-                    maxWidth: '50%'
+                    flex: { xs: 'none', sm: '3' },
+                    marginRight: { sm: '30px' },
+                    maxWidth: { xs: '100%', sm: '50%' },
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center', 
                 }}>
-
-                    <Box component="img" src={SampleImage} alt="Printing Products" sx={{ width: '40%%', maxHeight: '50%', objectFit: 'contain', marginBottom: '20px' }} />
-                    <Box component="img" src={SampleImage} alt="Printing Products" sx={{ width: '40%%', maxHeight: '50%', objectFit: 'contain', marginBottom: '20px' }} />
-
-
+                    <Box component="img" src={SampleImage} alt="Printing Products" sx={{
+                        width: '100%', maxHeight: '50%', objectFit: 'contain', marginBottom: '20px'
+                    }} />
+                    <Box component="img" src={SampleImage} alt="Printing Products" sx={{
+                        width: '100%', maxHeight: '50%', objectFit: 'contain', marginBottom: '20px'
+                    }} />
                 </Box>
 
                 <Box sx={{
                     flex: '1',
                     minWidth: '300px',
                     maxWidth: '800px',
-                    flexShrink: 0
+                    flexShrink: 0,
+                    marginTop: { xs: '20px', sm: '0' },
                 }}>
-                    <Typography variant="body1" sx={{ fontFamily: "DM Sans", textAlign: 'justify', marginBottom: '60px', marginTop: "20px" }}>
+                    <Typography variant="body1" sx={{
+                        fontFamily: "DM Sans", textAlign: 'justify', marginBottom: '60px', marginTop: "20px"
+                    }}>
                         Over the years, the printing industry has witnessed significant growth
                         worldwide, and India is no exception. The industry here has evolved into
                         a highly competitive and dynamic field. The rise of the Internet has
@@ -63,6 +71,7 @@ const Infrastructure = () => {
                         processes, our goal is to remain at the forefront of the industry,
                         delivering unparalleled quality and efficiency.
                     </Typography>
+
                     <Paper elevation={0} sx={{ bgcolor: '#FFD700', padding: '10px', marginBottom: '20px' }}>
                         <Typography variant="h6" sx={{ fontWeight: 'bold', textAlign: 'left' }}>
                             OUR PRESS
@@ -76,7 +85,6 @@ const Infrastructure = () => {
                             </Typography>
                         </ul>
                     </Typography>
-
 
                     <Paper elevation={0} sx={{ bgcolor: '#FFD700', padding: '10px', marginBottom: '20px' }}>
                         <Typography variant="h6" sx={{ fontWeight: 'bold', textAlign: 'left' }}>
@@ -96,29 +104,22 @@ const Infrastructure = () => {
                         </ul>
                     </Typography>
 
-
                     <Paper elevation={0} sx={{ bgcolor: '#FFD700', padding: '10px', marginBottom: '20px' }}>
                         <Typography variant="h6" sx={{ fontWeight: 'bold', textAlign: 'left' }}>
                             OUR POST PRESS
                         </Typography>
                     </Paper>
 
-
                     <Typography variant="body1">
-
                         <ul style={{ listStyleType: "disc", paddingLeft: "1.5rem", marginBottom: "50px" }}>
-                            <p style={{marginBottom:"25px"}}>We offer a wide range of post-press services to give your products a
+                            <p style={{ marginBottom: "25px" }}>We offer a wide range of post-press services to give your products a
                                 professional finish:</p>
-                            <li>
-                                Folding & Gathering Machines: For accurate folding and assembling of
-                                printed materials.
-                            </li>
+                            <li>Folding & Gathering Machines: For accurate folding and assembling of
+                                printed materials.</li>
                             <li>Saddle Stitching Machines: Perfect for binding booklets and brochures
-                                efficiently.
-                            </li>
+                                efficiently.</li>
                             <li>Perfect Binding Machines: For a sleek and durable finish to books and
-                                catalogs.
-                            </li>
+                                catalogs.</li>
                             <li>Section Sewing Machines: To ensure the strongest binding for high-quality
                                 publications.</li>
                             <li>Cutting Machines: For precision cuts across a variety of materials.</li>
@@ -133,9 +134,7 @@ const Infrastructure = () => {
                     </Typography>
                 </Box>
             </Box>
-            <div>
-                <Footer />
-            </div>
+            <Footer />
         </div>
     );
 };

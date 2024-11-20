@@ -1,44 +1,56 @@
 const Footer = () => {
   return (
-    <footer className="text-white" style={
-      {
-        height: "70vh", bottom: 0, background: "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(12,12,98,1) 35%, rgba(0,212,255,1) 100%)", fontSize: "15px",
-        width: "100%", zIndex: -10, paddingTop: 2
-      }}>
-      <div className="container mx-auto px-8 py-20" >
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+    <footer
+      className="text-white"
+      style={{
+        height: "auto", // Adjust for responsive height
+        background:
+          "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(12,12,98,1) 35%, rgba(0,212,255,1) 100%)",
+        fontSize: "15px",
+        width: "100%",
+        zIndex: -10,
+      }}
+    >
+      <div className="container mx-auto px-4 sm:px-8 py-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+          {/* MAIN LINKS */}
           <div>
-            <h3 className="font-bold mb-4">MAIN LINKS</h3>
+            <h3 className="font-bold mb-4 text-lg">MAIN LINKS</h3>
             <ul className="space-y-2">
-              <li><a href="/">Home</a></li>
-              <li><a href="/about">About Us</a></li>
-              <li><a href="/infrastructure">Infrastructure</a></li>
-              <li><a href="/strengths">Our Strengths</a></li>
-              <li><a href="/financials">Financials</a></li>
-              <li><a href="/contact">Contact Us</a></li>
+              <li><a href="/" className="hover:underline">Home</a></li>
+              <li><a href="/about" className="hover:underline">About Us</a></li>
+              <li><a href="/infrastructure" className="hover:underline">Infrastructure</a></li>
+              <li><a href="/strengths" className="hover:underline">Our Strengths</a></li>
+              <li><a href="/contact" className="hover:underline">Contact Us</a></li>
             </ul>
           </div>
+
+          {/* OUR SERVICES */}
           <div>
-            <h3 className="font-bold mb-4">OUR SERVICES</h3>
+            <h3 className="font-bold mb-4 text-lg">OUR SERVICES</h3>
             <ul className="space-y-2">
-              <li><a href="/financial-printing">Financial Printing</a></li>
-              <li><a href="/publishing-solutions">Publishing solutions</a></li>
-              <li><a href="/commercial-printing" >Commercial Printing</a></li>
-              <li><a href="/digital-printing" >Digital Printing</a></li>
-              <li><a href="/design-studio" >Design Studio</a></li>
-              <li><a href="/corrugation">Corrugation</a></li>
+              <li><a href="/financial-printing" className="hover:underline">Financial Printing</a></li>
+              <li><a href="/publishing-solutions" className="hover:underline">Publishing Solutions</a></li>
+              <li><a href="/commercial-printing" className="hover:underline">Commercial Printing</a></li>
+              <li><a href="/digital-printing" className="hover:underline">Digital Printing</a></li>
+              <li><a href="/design-studio" className="hover:underline">Design Studio</a></li>
+              <li><a href="/corrugation" className="hover:underline">Corrugation</a></li>
             </ul>
           </div>
+
+          {/* OTHER LINKS */}
           <div>
-            <h3 className="font-bold mb-4">OTHER LINKS</h3>
+            <h3 className="font-bold mb-4 text-lg">OTHER LINKS</h3>
             <ul className="space-y-2">
-              <li><a href="#">Warehouse & Logistics</a></li>
-              <li><a href="#">Certifications</a></li>
-              <li><a href="#">Our Policies</a></li>
+              <li><a href="#" className="hover:underline">Warehouse & Logistics</a></li>
+              <li><a href="#" className="hover:underline">Certifications</a></li>
+              <li><a href="#" className="hover:underline">Our Policies</a></li>
             </ul>
           </div>
+
+          {/* CORPORATE OFFICE */}
           <div>
-            <h3 className="font-bold mb-4">CORPORATE OFFICE</h3>
+            <h3 className="font-bold mb-4 text-lg">CORPORATE OFFICE</h3>
             <p className="mb-4">
               2/2222K, Sasinagar North<br />
               Sithurajarpuram, SIVAKASI, Tamil Nadu, India<br />
@@ -60,9 +72,13 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="text-white py-8">
-        <div className="container mx-auto px-4 flex justify-between items-center">
-          <p>Copyright © 2024 Divine Print Solutions Pvt. Ltd. | Terms & Conditions | Privacy Policy</p>
+
+      {/* Bottom Section */}
+      <div className="bg-opacity-10 py-8">
+        <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+          <p className="mb-4 md:mb-0">
+            Copyright © 2024 Divine Print Solutions Pvt. Ltd. | Terms & Conditions | Privacy Policy
+          </p>
           <a href="#" className="hover:underline">Site Map</a>
         </div>
       </div>
