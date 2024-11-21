@@ -210,10 +210,10 @@ const Homepage = () => {
               <div className="lg:w-1/2 w-full relative" style={{ zIndex: 10 }}>
                 <Slider {...carouselSettings}>
                   <div>
-                    <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=1000&q=80" alt="Carousel Image 1" className="w-full h-64 lg:h-96 object-cover" />
+                    <img src="https://images.pexels.com/photos/19797286/pexels-photo-19797286/free-photo-of-2024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Carousel Image 1" className="w-full h-64 lg:h-96 object-cover" />
                   </div>
                   <div>
-                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1000&q=80" alt="Carousel Image 2" className="w-full h-64 lg:h-96 object-cover" />
+                    <img src="https://images.pexels.com/photos/19843566/pexels-photo-19843566/free-photo-of-man-looking-at-new-printed-papers.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Carousel Image 2" className="w-full h-64 lg:h-96 object-cover" />
                   </div>
                   <div>
                     <img src="https://images.unsplash.com/photo-1476234251651-f353703a034d?auto=format&fit=crop&w=1000&q=80" alt="Carousel Image 3" className="w-full h-64 lg:h-96 object-cover" />
