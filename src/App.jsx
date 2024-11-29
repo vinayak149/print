@@ -12,6 +12,7 @@ import CommercialPrinting from "./Pages/CommercialPrinting";
 import DigitalPrinting from "./Pages/DigitalPrinting";
 import FinancialPrinting from "./Pages/FinancialPrinting";
 import PublishingSolutions from "./Pages/PublishingSolutions";
+import Clients from "./Pages/Clients";
 
 
 
@@ -27,6 +28,7 @@ const App = () => {
         <Route path="/services" element={<Services />} />
         <Route path="/strengths" element={<Strengths />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/clients" element={<Clients />} />
 
         {/* Services Routes */}
         <Route path="/financial-printing" element={<FinancialPrinting />} />
@@ -35,8 +37,6 @@ const App = () => {
         <Route path="/digital-printing" element={<DigitalPrinting />} />
         <Route path="/design-studio" element={<DesignStudio />} />
         <Route path="/corrugation" element={<Corrugation />} />
-
-
       </Routes>
     </Router>
   )

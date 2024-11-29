@@ -9,7 +9,11 @@ import "slick-carousel/slick/slick-theme.css";
 import { Link } from 'react-router-dom';
 import PaintDropAnimation from '../animations/PaintDrop.jsx'
 
+
+
 const Homepage = () => {
+
+  
   const carouselSettings = {
     dots: false,
     infinite: true,

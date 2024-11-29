@@ -48,7 +48,7 @@ const Navbar = () => {
                 onClick={toggleDropdown}
                 className="text-black hover:text-blue-600 text-sm font-medium flex items-center"
               >
-                OUR SERVICES
+                OUR CLIENTS
                 <svg
                   className="ml-1 w-4 h-4"
                   fill="none"
@@ -92,6 +92,12 @@ const Navbar = () => {
               className="text-black hover:text-blue-600 text-sm font-medium"
             >
               OUR STRENGTHS
+            </Link>
+            <Link
+              to="/clients"
+              className="text-black hover:text-blue-600 text-sm font-medium"
+            >
+              CLIENTS
             </Link>
             <Link
               to="/contact"
@@ -188,6 +194,15 @@ const Navbar = () => {
                   OUR STRENGTHS
                 </Link>
               </li>
+              <li>
+                <Link
+                  to="/clients"
+                  className="text-gray-600 hover:text-blue-600 text-sm font-medium"
+                >
+                  CLIENTS
+                </Link>
+              </li>
+              
               <li>
                 <Link
                   to="/contact"
