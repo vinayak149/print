@@ -209,6 +209,9 @@ const Homepage = () => {
                 </Link>
 
 
+                
+
+
               </div>
 
               <div className="lg:w-1/2 w-full relative" style={{ zIndex: 10 }}>

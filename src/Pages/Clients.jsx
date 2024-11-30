@@ -25,6 +25,36 @@ const Clients = () => {
         arrows: false,
     };
 
+    const clientSettings = {
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        infinite: true,
+        speed: 500,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+            }
+        ]
+    };
+
     const images = [
         "https://images.unsplash.com/photo-1529016623883-da79d2541b2e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "https://images.unsplash.com/photo-1503694978374-8a2fa686963a?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -69,13 +99,13 @@ const Clients = () => {
 
                         <br /><br />
                         <div className="relative">
-                            <Slider {...settings}>
-                                {clientImages.map((images, index) => (
-                                    <div key={index}>
+                            <Slider {...clientSettings}>
+                                {clientImages.map((image, index) => (
+                                    <div key={index} className="px-2">
                                         <img
-                                            src={images.src}
-                                            alt={`Slide ${index + 1}`}
-                                            className="w-[40%] h-[500px] ml-[30%]"
+                                            src={image.src}
+                                            alt={image.alt}
+                                            className="w-full h-64 object-cover"
                                         />
                                     </div>
                                 ))}
