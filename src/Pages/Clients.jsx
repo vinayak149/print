@@ -33,6 +33,7 @@ const Clients = () => {
         speed: 500,
         autoplay: true,
         autoplaySpeed: 3000,
+        adaptiveHeight: true,
         responsive: [
             {
                 breakpoint: 768,
