@@ -11,8 +11,6 @@ import img4 from '../assets/img4.jpeg';
 import img5 from '../assets/img5.jpeg';
 import img6 from '../assets/img6.jpeg';
 
-
-
 const Clients = () => {
     const settings = {
         dots: false,
@@ -23,36 +21,6 @@ const Clients = () => {
         autoplay: true,
         autoplaySpeed: 3000,
         arrows: false,
-    };
-
-    const clientSettings = {
-        centerMode: true,
-        centerPadding: '60px',
-        slidesToShow: 3,
-        infinite: true,
-        speed: 500,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 3
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 1
-                }
-            }
-        ]
     };
 
     const images = [
@@ -86,32 +54,46 @@ const Clients = () => {
                     ))}
                 </Slider>
                 <div className="absolute mb-[8px] inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                    <h1 className="text-white text-5xl" style={{ fontFamily: "DM Sans", fontWeight: "500" }}>OUR SERVICES</h1>
+                    <h1 className="text-white text-3xl md:text-5xl" style={{ fontFamily: "DM Sans", fontWeight: "500" }}>OUR SERVICES</h1>
                 </div>
             </div>
 
             <div className="container mx-auto px-4 py-12">
-                <div className="bg-white p-6">
-                    <h2 className="text-4xl font-bold mb-6" style={{ fontFamily: "DM Sans", marginBottom: "60px", marginLeft: "20px" }}>Our Clients</h2>
-                    <ul className="space-y-4 text-gray-700" style={{ listStyleType: "square", marginLeft: "20px", fontFamily: "DM Sans" }}>
-                        <p>Divine Print Solution has worked with a wide range of clients, showcasing some examples below:
-                        </p>
+                <div className="bg-white p-4 md:p-6">
+                    <h2 
+                        className="text-3xl md:text-4xl font-bold mb-6" 
+                        style={{ 
+                            fontFamily: "DM Sans", 
+                            marginBottom: "30px", 
+                            marginLeft: "10px md:20px" 
+                        }}
+                    >
+                        Our Clients
+                    </h2>
+                    <ul 
+                        className="space-y-4 text-gray-700" 
+                        style={{ 
+                            listStyleType: "square", 
+                            marginLeft: "10px md:20px", 
+                            fontFamily: "DM Sans" 
+                        }}
+                    >
+                        <p className="text-sm md:text-base">Divine Print Solution has worked with a wide range of clients, showcasing some examples below:</p>
 
-                        <br /><br />
-                        <div className="relative">
-                            <Slider {...clientSettings}>
-                                {clientImages.map((image, index) => (
-                                    <div key={index} className="px-2">
-                                        <img
-                                            src={image.src}
-                                            alt={image.alt}
-                                            className="w-full h-64 object-cover"
-                                        />
-                                    </div>
-                                ))}
-                            </Slider>
-                            <div className="absolute mb-[8px] inset-0 h-25 w-50 flex items-center justify-center">
-                            </div>
+                        <br />
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                            {clientImages.map((image, index) => (
+                                <div
+                                    key={index}
+                                    className="bg-white rounded-lg shadow-md mt-12 overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
+                                >
+                                    <img
+                                        src={image.src}
+                                        alt={image.alt}
+                                        className="w-full h-[30em] sm:h-[20px] lg:h-[30em] object-fill"
+                                    />
+                                </div>
+                            ))}
                         </div>
                     </ul>
                 </div>
