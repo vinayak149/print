@@ -16,11 +16,11 @@ const Navbar = () => {
         <div className="container mx-auto flex justify-between items-center px-4">
           <div className="flex items-center">
             <a href="/">
-            <img
-              src={logo}
-              alt="Divine Print Solutions"
-              className="h-16 w-16 mr-3"
-            />
+              <img
+                src={logo}
+                alt="Divine Print Solutions"
+                className="h-16 w-16 mr-3"
+              />
             </a>
           </div>
 
@@ -48,7 +48,7 @@ const Navbar = () => {
                 onClick={toggleDropdown}
                 className="text-black hover:text-blue-600 text-sm font-medium flex items-center"
               >
-                OUR CLIENTS
+                OUR SERVICES
                 <svg
                   className="ml-1 w-4 h-4"
                   fill="none"
@@ -202,7 +202,7 @@ const Navbar = () => {
                   CLIENTS
                 </Link>
               </li>
-              
+
               <li>
                 <Link
                   to="/contact"

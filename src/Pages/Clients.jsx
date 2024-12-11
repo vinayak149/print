@@ -10,6 +10,16 @@ import img3 from '../assets/img3.jpeg';
 import img4 from '../assets/img4.jpeg';
 import img5 from '../assets/img5.jpeg';
 import img6 from '../assets/img6.jpeg';
+import images7 from '../assets/images7.jpg';
+import img8 from '../assets/img8.png';
+import img9 from '../assets/img9.png';
+import img10 from '../assets/img10.jpg';
+import img11 from '../assets/img11.png';
+import img12 from '../assets/img12.png';
+import img13 from '../assets/img13.jpg';
+import img14 from '../assets/img14.jpg';
+import img15 from '../assets/img15.jpg';
+import img17 from '../assets/img17.png';
 
 const Clients = () => {
     const settings = {
@@ -30,13 +40,25 @@ const Clients = () => {
     ];
 
     const clientImages = [
-        { id: 1, src: img1, alt: 'Image 1 description' },
-        { id: 2, src: img2, alt: 'Image 2 description' },
-        { id: 3, src: img3, alt: 'Image 3 description' },
-        { id: 4, src: img4, alt: 'Image 4 description' },
-        { id: 5, src: img5, alt: 'Image 5 description' },
-        { id: 6, src: img6, alt: 'Image 6 description' },
+        { id: 1, src: img1, alt: 'Client Project 1' },
+        { id: 2, src: img2, alt: 'Client Project 2' },
+        { id: 3, src: img3, alt: 'Client Project 3' },
+        { id: 4, src: img4, alt: 'Client Project 4' },
+        { id: 5, src: img5, alt: 'Client Project 5' },
+        { id: 6, src: img6, alt: 'Client Project 6' },
+
+        { id: 7, src: images7, alt: 'Client Project 7' },
+        { id: 8, src: img8, alt: 'Client Project 8' },
+        { id: 9, src: img9, alt: 'Client Project 9' },
+        { id: 10, src: img10, alt: 'Client Project 10' },
+        { id: 11, src: img11, alt: 'Client Project 11' },
+        { id: 12, src: img12, alt: 'Client Project 12' },
+        { id: 13, src: img13, alt: 'Client Project 13' },
+        { id: 14, src: img14, alt: 'Client Project 14' },
+        { id: 15, src: img15, alt: 'Client Project 15' },
+        { id: 17, src: img17, alt: 'Client Project 17' }
     ]
+
 
     return (
         <div className="min-h-screen bg-white">
@@ -54,47 +76,64 @@ const Clients = () => {
                     ))}
                 </Slider>
                 <div className="absolute mb-[8px] inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                    <h1 className="text-white text-3xl md:text-5xl" style={{ fontFamily: "DM Sans", fontWeight: "500" }}>OUR SERVICES</h1>
+                    <h1 className="text-white text-3xl md:text-5xl" style={{ fontFamily: "DM Sans", fontWeight: "500" }}>OUR CLIENTS</h1>
                 </div>
             </div>
 
             <div className="container mx-auto px-4 py-12">
                 <div className="bg-white p-4 md:p-6">
-                    <h2 
-                        className="text-3xl md:text-4xl font-bold mb-6" 
-                        style={{ 
-                            fontFamily: "DM Sans", 
-                            marginBottom: "30px", 
-                            marginLeft: "10px md:20px" 
+                    <h2
+                        className="text-3xl md:text-4xl font-bold mb-6"
+                        style={{
+                            fontFamily: "DM Sans",
+                            marginBottom: "30px",
+                            marginLeft: "10px md:20px"
                         }}
                     >
                         Our Clients
                     </h2>
-                    <ul 
-                        className="space-y-4 text-gray-700" 
-                        style={{ 
-                            listStyleType: "square", 
-                            marginLeft: "10px md:20px", 
-                            fontFamily: "DM Sans" 
-                        }}
-                    >
-                        <p className="text-sm md:text-base">Divine Print Solution has worked with a wide range of clients, showcasing some examples below:</p>
-
+                    <ul className="space-y-4 text-gray-700" style={{ fontFamily: "DM Sans" }}>
+                        <p className="text-sm md:text-base">
+                            Divine Print Solution has worked with a wide range of clients, showcasing some examples below:
+                        </p>
                         <br />
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                        <Slider
+                            dots={true}
+                            infinite={true}
+                            speed={500}
+                            slidesToShow={3}
+                            autoplay={true}
+                            autoplaySpeed={2500}
+                            slidesToScroll={1}
+                            responsive={[
+                                {
+                                    breakpoint: 1024,
+                                    settings: {
+                                        slidesToShow: 2,
+                                        slidesToScroll: 1,
+                                    },
+                                },
+                                {
+                                    breakpoint: 600,
+                                    settings: {
+                                        slidesToShow: 1,
+                                        slidesToScroll: 1,
+                                    },
+                                },
+                            ]}
+                        >
                             {clientImages.map((image, index) => (
-                                <div
-                                    key={index}
-                                    className="bg-white rounded-lg shadow-md mt-12 overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
-                                >
-                                    <img
-                                        src={image.src}
-                                        alt={image.alt}
-                                        className="w-full h-[30em] sm:h-[20px] lg:h-[30em] object-fill"
-                                    />
+                                <div key={index} className="p-2">
+                                    <div className="bg-white rounded-lg shadow-md overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                                        <img
+                                            src={image.src}
+                                            alt={image.alt}
+                                            className="w-full h-[30em] object-fill"
+                                        />
+                                    </div>
                                 </div>
                             ))}
-                        </div>
+                        </Slider>
                     </ul>
                 </div>
             </div>
