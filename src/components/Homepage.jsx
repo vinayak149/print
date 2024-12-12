@@ -13,7 +13,7 @@ import PaintDropAnimation from '../animations/PaintDrop.jsx'
 
 const Homepage = () => {
 
-  
+
   const carouselSettings = {
     dots: false,
     infinite: true,
@@ -183,7 +183,7 @@ const Homepage = () => {
       ),
     },
   ];
-  
+
   return (
     <>
       <div className="relative flex flex-col min-h-screen">
@@ -209,7 +209,7 @@ const Homepage = () => {
                 </Link>
 
 
-                
+
 
 
               </div>
@@ -274,9 +274,8 @@ const Homepage = () => {
           </div>
 
 
-
-          <div className="our-services-container mt-24 px-4 lg:px-0">
-            <h2 className="our-services-title text-center text-3xl lg:text-4xl font-normal" style={{ zIndex: 10, fontFamily: "DM Sans", fontWeight: "700", background: "linear-gradient(to right, #fcd34d, #f59e0b, #d97706)" }}>
+          <div className="our-services-container mt-24 px-4 lg:px-0 pb-8">
+            <h2 className="our-services-title text-center text-3xl lg:text-4xl font-normal" style={{zIndex: "10", fontFamily: 'DM Sans', fontWeight: "700", background: "linear-gradient(to right, #fcd34d, #f59e0b, #d97706)"}}>
               OUR SERVICES
             </h2>
             <div className="services-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-14">
